@@ -7,7 +7,8 @@ from django.contrib import messages
 
 
 def index(request):
-    return render(request, "index.html")
+    context = Item.objects.all()
+    return render(request, "index.html", {"context":context})
 
 def create(request):
     if request.method == "POST":

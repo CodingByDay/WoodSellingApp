@@ -12,16 +12,12 @@ STOCK_CHOICES = (
 ) 
 
 class Item(models.Model):
-    ime                         =models.CharField(max_length=150)
-    opis                  =models.CharField(max_length=200)
+    ime                        =models.CharField(max_length=150)
+    opis                       =models.CharField(max_length=200)
     cena                       =models.IntegerField()
-    lager = models.CharField(
+    lager = models.CharField(max_length=100)
 
-        max_length = 20, 
-        choices = STOCK_CHOICES, 
-        default = '1'
-
-        ) 
+        
 
     def __str__(self):
         return self.ime

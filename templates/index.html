@@ -89,8 +89,45 @@
 			<h2>Naši proizvodi.</h2>
 			
 		<span class="subheading">Trenutno u ponudi imamo.</span>
+
+			<center><h1>Ponuda</h1></center>
+		
+			<br>
+			<div class="row">
+				<div class="com-md">
+					<div class="card card-body">
+						<table class="table table-sm", name="tabela", align="right">
+			<tr>
+			<th>Ime</th>
+			<th>Opis</th>
+			<th>Cena</th>
+			<th>Lager</th>
+			
+			
+			
+			
+			
+			</tr>
+			<!-- Showing user tickets -->
+			{% for i in context %}
+			<tr>
+				<td>{{i.ime}}</td>
+				<td>{{i.opis}}</td>
+				<td>{{i.cena}}</td>
+				<td>{{i.lager}}</td>
+			
+				{% endfor %}
+			
+			
+						</tr>
+					 </table>
+				   </div>
+				</div>
+			</div>
 	
-		<center><img src="{% static 'img/Items.png' %}" alt="items"></center>
+
+
+		<img src="{% static 'img/Items.png' %}" alt="items">
 		
 		
 		
