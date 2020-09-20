@@ -87,6 +87,7 @@
 		<div class="large-12 columns">
 			
 			<form method="post" action="/create/">
+				{% csrf_token %}
 				{{form}}
 				<button type="submit", name="save">Posaljite ponudu</button>
 				</form>
