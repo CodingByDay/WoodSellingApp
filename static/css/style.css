@@ -165,7 +165,7 @@ header .large-8 {
 #header {background:url(../img/super.jpg) no-repeat -509px -391px !important; }
 #teaser-slider-2 {
 
-	background-image: url(../img/fire.png);
+	background-image: url(/static/img/fire.png);
 	width: auto;
 	background-repeat: no-repeat;
 	margin-top: 0;

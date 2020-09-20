@@ -35,10 +35,8 @@
 			  <section class="top-bar-section">
 			    <ul class="right" id="menu">
 					
-			      <li data-magellan-arrival="features"><a href="#features">O nama</a></li>
-			      <li data-magellan-arrival="product"><a href="#product">Proizvodi</a></li>
-				  <li data-magellan-arrival="contact"><a href="#contact">Kontakt</a></li>
-				  <li class="Create"><a href="{% url 'create' %}">Napravi ponudu</a></li>
+			  
+				  <li class="Create"><a href="{% url 'index' %}">Početna strana.</a></li>
 
 
 			    </ul>
@@ -71,105 +69,20 @@
         
 		<div class="large-6 columns">
 			<h1>Prodaja i dostava drva.</h1>
-			<span class="subheading">Prodaja svih vrsta drva, ćumura, potpale, paleta, moguća dostava na lokaciji Beograda.</span>
+			<span class="subheading">Pošaljite nam vašu narudžbina ispod, javićemo Vam se sa cenom.</span>
 	     
 		</div>
 		
 	</div>
 	
 </header>
-<div id="features" class="section features" data-magellan-destination="features">
-	<h2 id="about">Beogradska firma. Website je trenutno u izdradi!</h2>
-	</div>
+
 
 <div id="product" class="section product gray" data-magellan-destination="product">
 	<div class="row">
 		<div class="large-12 columns">
 			
-			<h2>Naši proizvodi.</h2>
 			
-		<span class="subheading">Trenutno u ponudi imamo.</span>
-	
-		<center><img src="{% static 'img/Items.png' %}" alt="items"></center>
-		
-		
-		
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div id="screenshot" class="section screenshot">
-	<div class="row">
-		<div class="large-12 columns"></div>
-			<h2></h2>
-			<span class="subheading">
-
-</span>
-	
-			
-				
-  			</ul>
-		</div>
-	</div>
-</div>
-<div id="pricing-table" class="section pricing gray" data-magellan-destination="pricing">
-	<div class="row">
-		<div class="large-12 quotes columns">
-			<ul id="quotes1" data-orbit>
-			  <li class="quote" data-orbit-slide="headline-1">
-			  	<blockquote>Odlična usluga, mogućnost dostave.</blockquote>
-				<span class="author">Restoran Plavi Cvet</span>
-			  </li>
-			  <li class="quote" data-orbit-slide="headline-2">
-			  	<blockquote>Jednostavno i korisno.</blockquote>
-				<span class="author">Marija Stefanović</span>
-			  </li>
-			  <li class="quote" data-orbit-slide="headline-3">
-			  	<blockquote>Odlično za restorane</blockquote>
-				<span class="author">Luka Petrović</span>
-			  </li>
-			</ul>
-		</div>
-	</div>
-	
-	
-	</div>
-</div>
-
-<div id="contact"  class="section contact gray" data-magellan-destination="contact">
-	
-    
-    <div class="row">
-		<div class="large-12 columns">
-			<h2>Kontakt forma</h2>
-			<span class="subheading">Ako imate bilo kakvih pitanja, ostavite nam email.
-
-</span>
-
-    
-		<form method="post" action="#" id="contactform">
-					<div>
-						<label for="name">Vaše Ime</label>
-						<input type="text" class="input-field" id="name" name="name" value="">
-					</div>
-					<div>
-						<label for="email">Vaš email</label>
-						<input type="text" class="input-field" id="email" name="email" value="">
-					</div>
-					<div>
-						<label>Vaše pitanje.</label>
-						<textarea id="message" name="message"></textarea>
-					</div>
-					<a id="button-send" href="#" title="Send Email" class="button" style="width:100%;">Pošalji!</a>
-					<div id="success">Uspešno ste poslali email</div>
-					<div id="error">Pokušajte ponovo, email nije poslat.</div>
-				</form>
-
-        </div>
-        </div>
-</div>
 <footer>
 	<div class="row">
 		<div class="large-6 columns">
