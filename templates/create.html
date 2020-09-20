@@ -36,7 +36,7 @@
 			    <ul class="right" id="menu">
 					
 			  
-				  <li class="Index"><a href="{% url 'index' %}">Početna strana.</a></li>
+				  <li class="Index"><a href="{% url 'index' %}">Početna strana</a></li>
 
 
 			    </ul>
@@ -85,12 +85,12 @@
 <div id="product" class="section product gray" data-magellan-destination="product">
 	<div class="row">
 		<div class="large-12 columns">
-			
-			<form method="post" action="/create/">
+			{% load crispy_forms_tags %}
+			<center><form method="post" action="/create/">
 				{% csrf_token %}
-				{{form}}
+				{{form|crispy}}
 				<button type="submit", name="save">Posaljite ponudu</button>
-				</form>
+				</form></center>
 <footer>
 	<div class="row">
 		<div class="large-6 columns">
