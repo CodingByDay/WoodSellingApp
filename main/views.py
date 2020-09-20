@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from .models import Item, Offer
+from .forms import CreateNewOffer
 
 # Create your views here.
 
