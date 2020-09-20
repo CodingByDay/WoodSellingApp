@@ -10,4 +10,5 @@ def index(request):
     return render(request, "index.html")
 
 def create(request):
-    return render(request, 'create.html')
+    form = CreateNewOffer()
+    return render(request, 'create.html', {"form": form})
