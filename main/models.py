@@ -42,8 +42,8 @@ class Offer(models.Model):
     phone_number                 =models.IntegerField() 
     email_address                =models.EmailField(null=False)   
     address                      =models.CharField(max_length=120)
-    datetime                     =models.DateTimeField()
-    finalOffer                   =models.IntegerField()
+    datetime                     =models.DateTimeField(null=True)
+    finalOffer                   =models.IntegerField(null=True)
     sendEmail                    =models.BooleanField(default=False)
     status                       =models.BooleanField(default=False) 
     def __str__(self):
