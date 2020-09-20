@@ -36,11 +36,15 @@
 			    <ul class="right" id="menu">
 					
 			  
-				  <li class="Create"><a href="{% url 'index' %}">Početna strana.</a></li>
+				  <li class="Index"><a href="{% url 'index' %}">Početna strana.</a></li>
 
 
 			    </ul>
 			  </section>
+
+			  
+
+
 			</nav>
 		</div>
 	</div>
@@ -82,7 +86,10 @@
 	<div class="row">
 		<div class="large-12 columns">
 			
-			
+			<form method="post" action="/create/">
+				{{form}}
+				<button type="submit", name="save">Posaljite ponudu</button>
+				</form>
 <footer>
 	<div class="row">
 		<div class="large-6 columns">
