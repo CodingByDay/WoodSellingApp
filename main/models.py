@@ -5,14 +5,26 @@ from datetime import datetime
 #
 #
 #
+STOCK_CHOICES = ( 
+    ("1", "Da."), 
+    ("2", "Ne."), 
+   
+) 
 
 class Item(models.Model):
-    name                         =models.CharField(max_length=150)
-    description                  =models.CharField(max_length=200)
-    price                        =models.IntegerField()
+    ime                         =models.CharField(max_length=150)
+    opis                  =models.CharField(max_length=200)
+    cena                       =models.IntegerField()
+    lager = models.CharField(
+
+        max_length = 20, 
+        choices = STOCK_CHOICES, 
+        default = '1'
+
+        ) 
 
     def __str__(self):
-        return self.name
+        return self.ime
 
 
 ######################################################################################
