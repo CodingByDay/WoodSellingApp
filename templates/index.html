@@ -185,24 +185,13 @@
 
 </span>
 
-    
-		<form method="post" action="#" id="contactform">
-					<div>
-						<label for="name">Vaše Ime</label>
-						<input type="text" class="input-field" id="name" name="name" value="">
-					</div>
-					<div>
-						<label for="email">Vaš email</label>
-						<input type="text" class="input-field" id="email" name="email" value="">
-					</div>
-					<div>
-						<label>Vaše pitanje.</label>
-						<textarea id="message" name="message"></textarea>
-					</div>
-					<a id="button-send" href="#" title="Send Email" class="button" style="width:100%;">Pošalji!</a>
-					<div id="success">Uspešno ste poslali email</div>
-					<div id="error">Pokušajte ponovo, email nije poslat.</div>
-				</form>
+     {% load crispy_forms_tags %}
+		<center><form method="post" action="#" id="contactform">
+			{% csrf_token %}
+			
+			{{form|crispy}}
+			<button type="submit", name="save">Posalji!</button>
+				</form></center>
 
         </div>
         </div>

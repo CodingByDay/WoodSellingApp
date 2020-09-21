@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from datetime import datetime
+from django.core.mail import send_mail
 # Create your models here.
 #
 #
@@ -27,12 +28,12 @@ class Item(models.Model):
 class Offer(models.Model):
     item                         =models.ForeignKey(Item, on_delete=models.CASCADE, null=False)
     quantity1                     =models.IntegerField(null=False)   
-    second                       =models.ForeignKey(Item, on_delete=models.CASCADE, related_name='second', null=True)
-    quantity2                     =models.IntegerField(null=True)
-    third                        =models.ForeignKey(Item, on_delete=models.CASCADE, related_name='third', null=True)
-    quantity3                    =models.IntegerField(null=True)
-    fourth                       =models.ForeignKey(Item, on_delete=models.CASCADE, related_name='fourth', null=True)
-    quantity4                     =models.IntegerField(null=True)
+    second                       =models.ForeignKey(Item, on_delete=models.CASCADE, related_name='second', null=True, blank=True)
+    quantity2                     =models.IntegerField(null=True, blank=True)
+    third                        =models.ForeignKey(Item, on_delete=models.CASCADE, related_name='third', null=True, blank=True)
+    quantity3                    =models.IntegerField(null=True, blank=True)
+    fourth                       =models.ForeignKey(Item, on_delete=models.CASCADE, related_name='fourth', null=True, blank=True)
+    quantity4                     =models.IntegerField(null=True, blank=True)
     first_last_name              =models.CharField(max_length=120)
      
     phone_number                 =models.IntegerField() 
@@ -44,9 +45,25 @@ class Offer(models.Model):
     status                       =models.BooleanField(default=False) 
     def __str__(self):
         return self.first_last_name
+
+        
+    def save(self):
+        if self.sendEmail == True:
+            send_mail("Potpala drvo ćumur ponuda.", 
+            "Ukupna cena za vaše artikle je" +  " " + str(self.finalOffer), 
+           "jankojovicic351@gmail.com", 
+           [self.email_address], fail_silently=False)
+        super().save()
+
     
 #######################################################################################
+class Message(models.Model):
+    name = models.CharField(max_length=120)
+    email = models.EmailField(null=False, max_length=254)
+    message = models.CharField(max_length=256, null=False)
+    response = models.CharField(max_length=256, null=True)
 
-
+    def __str__(self):
+        return self.name
 
 #######################################################################################

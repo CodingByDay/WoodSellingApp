@@ -24,4 +24,8 @@ class CreateNewOffer(forms.Form):
     email_address = forms.EmailField(label="Email adresa.")           
     address = forms.CharField(label="Adresa za dostavu.", max_length = 200)                      
                      
-                       
+
+class CreateMessage(forms.Form):
+    name = forms.CharField(label="Vaše ime", max_length = 200, required=True)  
+    email = forms.EmailField(label="Email adresa.", required=True)     
+    message = forms.CharField(label="Pitanje", max_length = 200, required=True) 
