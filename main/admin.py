@@ -1,7 +1,9 @@
 from django.contrib import admin
+from django.contrib.admin import site
 from .models import Offer, Item, Message
 # Register your models here.
 from django.contrib.auth.admin import UserAdmin
+import adminactions.actions as actions
 
 class OfferAdmin(UserAdmin):
     list_display = ('item', 'phone_number', 'address', 'finalOffer', 'status')
@@ -30,3 +32,4 @@ class MessageAdmin(UserAdmin):
     
     ordering = ('name', 'email', 'message')
 admin.site.register(Message, MessageAdmin)
+actions.add_to_site(site)
