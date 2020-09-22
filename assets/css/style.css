@@ -4,6 +4,25 @@ Respoinsive App Landing Page
 by EGrappler.com
 
 **************/
+.button1 {
+	display: block;
+	height: 100px;
+	width: 300px;
+	background: #6f3634;
+	border: 2px solid rgba(33, 68, 72, 0.59);
+	background-color: wheat;
+	display: block;
+	height: 100px;
+	width: 300px;
+	background: #34696f;
+	border: 2px solid rgba(33, 68, 72, 0.59);
+	
+
+	color: rgba(0, 0, 0, 0.55);
+	text-align: center;
+	font: bold 3.2em/100px 
+   }
+
 #about {
 	color: wheat;
 }
