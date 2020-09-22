@@ -9,7 +9,7 @@
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Potpaladrvocumur </title>
+  <title>potpaladrvocumur </title>
 
   <link rel="stylesheet" href="{% static 'css/normalize.css' %}" />
   <link rel="stylesheet" href="{% static 'css/foundation.min.css' %}" />
@@ -79,55 +79,60 @@
 	
 </header>
 <div id="features" class="section features" data-magellan-destination="features">
-	<h2 id="about">Beogradska firma. Website je trenutno u izdradi!</h2>
+
 	</div>
 
 <div id="product" class="section product gray" data-magellan-destination="product">
 	<div class="row">
 		<div class="large-12 columns">
-			
-			<h2>Naši proizvodi.</h2>
-			
-		<span class="subheading">Trenutno u ponudi imamo.</span>
-
-			<center><h1>Ponuda</h1></center>
+			<center><h3>O nama</h3></center>
+			<hr>
+			<center><h4>Za pravo i iskreno druženje sa prijateljima uz roštilj i voljenom
+				osobom uz kamin ali i uspešan rad svih onih koji radni dan počinju sa
+				vatrom: restorani, picerije, pekare, fast food - grill, pečenjare,
+				prepustite nama da umesto vas zapalimo vatru i održimo je,
+				
+				Zatraži ponudu i mi će mo te kontaktirati i u dogovoru sa tobom ti što
+				pre dostaviti na željenoj lokaciji sve što ti je potrebno da uspešno
+				iz prve zapališ vatru i održiš je.</h1>
+				<hr>
+				
+			<h2>Naši proizvodi.</h4>
+			<hr>
+		<span class="subheading">Trenutno u ponudi imamo.</span></center>
+		<img src="{% static 'img/Items.png' %}" alt="items" align="left">
+		<div class="row">
+			<div class="com-md">
+				<div class="card card-body">
+					<table class="table table-sm", name="tabela", align="right">
+		<tr>
+		<th>Ime</th>
+		<th>Opis</th>
+		<th>Cena</th>
+		<th>Lager</th>
 		
-			<br>
-			<div class="row">
-				<div class="com-md">
-					<div class="card card-body">
-						<table class="table table-sm", name="tabela", align="right">
-			<tr>
-			<th>Ime</th>
-			<th>Opis</th>
-			<th>Cena</th>
-			<th>Lager</th>
-			
-			
-			
-			
-			
-			</tr>
-			<!-- Showing user tickets -->
-			{% for i in context %}
-			<tr>
-				<td>{{i.ime}}</td>
-				<td>{{i.opis}}</td>
-				<td>{{i.cena}}</td>
-				<td>{{i.lager}}</td>
-			
-				{% endfor %}
-			
-			
-						</tr>
-					 </table>
-				   </div>
-				</div>
+		
+		
+		
+		
+		</tr>
+		<!-- Showing user tickets -->
+		{% for i in context %}
+		<tr>
+			<td>{{i.ime}}</td>
+			<td>{{i.opis}}</td>
+			<td>{{i.cena}}</td>
+			<td>{{i.lager}}</td>
+		
+			{% endfor %}
+		
+		
+					</tr>
+				 </table>
+			   </div>
 			</div>
-	
-
-
-		<img src="{% static 'img/Items.png' %}" alt="items">
+		</div>
+		
 		
 		
 		
@@ -168,6 +173,11 @@
 				<span class="author">Luka Petrović</span>
 			  </li>
 			</ul>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.5933650880443!2d20.689963315091767!3d44.87057237909838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7f0cf1828e81%3A0x896506e3b1495dab!2z0JHQsNCy0LDQvdC40YjRgtCw0L3RgdC60Lgg0L_Rg9GCIDEwMCwg0J_QsNC90YfQtdCy0L4!5e0!3m2!1ssr!2srs!4v1600784141980!5m2!1ssr!2srs" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<p>
+            <
+
+			</p>
 		</div>
 	</div>
 	
@@ -177,10 +187,15 @@
 
 <div id="contact"  class="section contact gray" data-magellan-destination="contact">
 	
-    
     <div class="row">
 		<div class="large-12 columns">
 			<h2>Kontakt forma</h2>
+			<center>
+			
+				
+				<p> telefon: 063 1629 699
+				<p>e-mail: potpaladrvocumur@gmail.com
+				<p>web sajt: www.potpaladrvocumur.rs</p></center>
 			<span class="subheading">Ako imate bilo kakvih pitanja, ostavite nam email.
 
 </span>

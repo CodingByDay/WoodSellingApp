@@ -62,8 +62,16 @@ class Message(models.Model):
     email = models.EmailField(null=False, max_length=254)
     message = models.CharField(max_length=256, null=False)
     response = models.CharField(max_length=256, null=True)
-
+    sendEmail = models.BooleanField(default=False)
     def __str__(self):
         return self.name
+
+    def save(self):
+        if self.sendEmail == True:
+            send_mail("Odgovor", 
+            str(self.response), 
+           "jankojovicic351@gmail.com", 
+           [self.email], fail_silently=False)
+        super().save()
 
 #######################################################################################
