@@ -50,8 +50,8 @@ class Offer(models.Model):
     def save(self):
         if self.sendEmail == True:
             send_mail("Potpala drvo ćumur ponuda.", 
-            "Ukupna cena za vaše artikle je" +  " " + str(self.finalOffer), 
-           "jankojovicic351@gmail.com", 
+            "Ukupna cena za vaše artikle je" +  " " + str(self.finalOffer) + "Odgovorite potvrdno na ovaj email, da potvrdite kupovinu.", 
+           "potpaladrvocumur@gmail.com", 
            [self.email_address], fail_silently=False)
         super().save()
 
@@ -70,7 +70,7 @@ class Message(models.Model):
         if self.sendEmail == True:
             send_mail("Odgovor", 
             str(self.response), 
-           "jankojovicic351@gmail.com", 
+           "potpaladrvocumur@gmail.com", 
            [self.email], fail_silently=False)
         super().save()
 

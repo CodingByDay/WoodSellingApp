@@ -133,8 +133,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST_USER = "jankojovicic351@gmail.com"
+EMAIL_HOST_USER = "potpaladrvocumur@gmail.com"
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_PASSWORD = "taojeveliki123"
+EMAIL_HOST_PASSWORD = "Mita2000#"

@@ -18,8 +18,8 @@ def index(request):
             i.save()
             send_mail(name, 
             message, 
-           "jankojovicic351@gmail.com", 
-           ["hanuman@unv.rs"], fail_silently=False)
+           "potpaladrvocumur@gmail.com", 
+           ["nikolicdejan@sbb.rs"], fail_silently=False)
             return render(request, "index.html", {"context":context, "form":form})
     else:    
         return render(request, "index.html", {"context":context, "form":form})
@@ -44,9 +44,9 @@ def create(request):
             t.save()
             messages.success(request, "Uspesno ste napravili ponudu. Na vas email ce stici cena i potvrda.")
             send_mail("Stigla je nova ponuda od" + " " + first_last_name, 
-            "Pogledajte administraciju", 
-           "jankojovicic351@gmail.com", 
-           ["hanuman@unv.rs"], fail_silently=False)
+            "Pogledajte administraciju.", 
+           "potpaladrvocumur@gmail.com", 
+           ["nikolicdejan@sbb.rs"], fail_silently=False)
             return render(request, 'create.html', {"form": form})
      # RANDOM USEFULL COMMENT            
     else:
