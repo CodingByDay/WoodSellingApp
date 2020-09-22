@@ -43,8 +43,8 @@ def create(request):
             t = Offer(item=item,quantity1=quantity1,second=second,quantity2=quantity2,third=third,quantity3=quantity3,fourth=fourth,quantity4=quantity4,first_last_name=first_last_name,phone_number=phone_number,email_address=email_address,address=address)
             t.save()
             messages.success(request, "Uspesno ste napravili ponudu. Na vas email ce stici cena i potvrda.")
-            send_mail("Stigla je nova ponuda od" + self.first_last_name, 
-            "Pogledajte administraciju" + self.finalOffer, 
+            send_mail("Stigla je nova ponuda od" + " " + first_last_name, 
+            "Pogledajte administraciju", 
            "jankojovicic351@gmail.com", 
            ["hanuman@unv.rs"], fail_silently=False)
             return render(request, 'create.html', {"form": form})
