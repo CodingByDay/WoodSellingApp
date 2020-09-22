@@ -4,24 +4,6 @@ Respoinsive App Landing Page
 by EGrappler.com
 
 **************/
-.button1 {
-	display: block;
-	height: 100px;
-	width: 300px;
-	background: #6f3634;
-	border: 2px solid rgba(33, 68, 72, 0.59);
-	background-color: wheat;
-	display: block;
-	height: 100px;
-	width: 300px;
-	background: #34696f;
-	border: 2px solid rgba(33, 68, 72, 0.59);
-	
-
-	color: rgba(0, 0, 0, 0.55);
-	text-align: center;
-	font: bold 3.2em/100px 
-   }
 
 #about {
 	color: wheat;
@@ -58,7 +40,7 @@ h2 {
 	position: fixed; top: 40px!important;
 	left: 0px;
 	right: 0px;
-	background:#C19A6B !important;
+	background:#f82e2e !important;
 	z-index: 100;
 	padding: 0 !important;
 	-moz-box-shadow: 0 1px 0 rgba(0,0,0,.1);
@@ -70,7 +52,7 @@ h2 {
 .top-bar-section li a:not(.button) {
 	background-color:#C19A6B !important;
 	color: #222;
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: 200;
 }
 .top-bar {
@@ -97,10 +79,11 @@ h2 {
 }
 .top-bar-section ul li>a.button {
 	min-width: inherit !important;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
 	height: auto;
 	display: inline-block;
+	background-color: red;
 }
 .top-bar .toggle-topbar.menu-icon a,
 .top-bar .toggle-topbar a {

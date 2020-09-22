@@ -80,10 +80,11 @@ h2 {
 }
 .top-bar-section ul li>a.button {
 	min-width: inherit !important;
-	padding-left: 30px;
-	padding-right: 30px;
-	height: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	height: max-content;
 	display: inline-block;
+	background-color: red;
 }
 .top-bar .toggle-topbar.menu-icon a,
 .top-bar .toggle-topbar a {
@@ -261,8 +262,8 @@ header .large-8 {
 
 /* Buttons */
 .button {
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
 	-webkit-transition: all 0.4s ease-in-out;  /* Chrome 1-25, Safari 3.2+ */
      -moz-transition: all 0.4s ease-in-out;  /* Firefox 4-15 */
        -o-transition: all 0.4s ease-in-out;  /* Opera 10.50–12.00 */
