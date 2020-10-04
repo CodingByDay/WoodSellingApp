@@ -50,7 +50,7 @@ class Offer(models.Model):
     def save(self):
         if self.sendEmail == True:
             send_mail("Potpala drvo ćumur ponuda.", 
-            "Ukupna cena za vaše artikle je" +  " " + str(self.finalOffer) + "Odgovorite potvrdno na ovaj email, da potvrdite kupovinu.", 
+            "Ukupna cena za vaše artikle je" +  " " + str(self.finalOffer) + "Odgovorite na ovaj email, da potvrdite kupovinu.", 
            "potpaladrvocumur@gmail.com", 
            [self.email_address], fail_silently=False)
         super().save()

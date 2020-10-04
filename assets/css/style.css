@@ -5,6 +5,7 @@ by EGrappler.com
 
 **************/
 
+
 #about {
 	color: wheat;
 }
@@ -40,7 +41,7 @@ h2 {
 	position: fixed; top: 40px!important;
 	left: 0px;
 	right: 0px;
-	background:#f82e2e !important;
+	background:#C19A6B !important;
 	z-index: 100;
 	padding: 0 !important;
 	-moz-box-shadow: 0 1px 0 rgba(0,0,0,.1);
@@ -52,7 +53,7 @@ h2 {
 .top-bar-section li a:not(.button) {
 	background-color:#C19A6B !important;
 	color: #222;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 200;
 }
 .top-bar {
@@ -81,7 +82,7 @@ h2 {
 	min-width: inherit !important;
 	padding-left: 40px;
 	padding-right: 40px;
-	height: auto;
+	height: max-content;
 	display: inline-block;
 	background-color: red;
 }
@@ -167,7 +168,7 @@ header .large-8 {
 #header {background:url(../img/super.jpg) no-repeat -509px -391px !important; }
 #teaser-slider-2 {
 
-	background-image: url(../img/fire.png);
+	background-image: url(/static/img/fire.png);
 	width: auto;
 	background-repeat: no-repeat;
 	margin-top: 0;
@@ -186,7 +187,7 @@ header .large-8 {
 .download-btn {
 	background-color: #ff6000;
 	padding:31px 95px;
-	background-image:url(../img/fire.png);
+	background-image:url(../img/button.png);
 	float:left;
 	margin:20px 0 0 0;
 	border-radius:3px;
@@ -261,8 +262,8 @@ header .large-8 {
 
 /* Buttons */
 .button {
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
 	-webkit-transition: all 0.4s ease-in-out;  /* Chrome 1-25, Safari 3.2+ */
      -moz-transition: all 0.4s ease-in-out;  /* Firefox 4-15 */
        -o-transition: all 0.4s ease-in-out;  /* Opera 10.50–12.00 */
