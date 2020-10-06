@@ -37,7 +37,7 @@ class Offer(models.Model):
     first_last_name              =models.CharField(max_length=120)
      
     phone_number                 =models.IntegerField() 
-    email_address                =models.EmailField(null=False)   
+    email_address                =models.EmailField(null=True)   
     address                      =models.CharField(max_length=120)
     datetime                     =models.DateTimeField(null=True)
     finalOffer                   =models.IntegerField(null=True)
@@ -59,7 +59,7 @@ class Offer(models.Model):
 #######################################################################################
 class Message(models.Model):
     name = models.CharField(max_length=120)
-    email = models.EmailField(null=False, max_length=254)
+    email = models.EmailField(null=True, max_length=254)
     message = models.CharField(max_length=256, null=False)
     response = models.CharField(max_length=256, null=True)
     sendEmail = models.BooleanField(default=False)
