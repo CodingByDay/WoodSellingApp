@@ -72,6 +72,6 @@ class Message(models.Model):
             str(self.response), 
            "potpaladrvocumur@gmail.com", 
            [self.email], fail_silently=False)
-        super().save()
+        
 
 #######################################################################################
