@@ -103,6 +103,7 @@
 			<hr>
 		<span class="subheading">Trenutno u ponudi imamo:</span></center>
 		<center><img src="{% static 'img/Items.png' %}" alt="items"></center>
+		<hr>
 		
 
 		<div class="row">
@@ -110,9 +111,7 @@
 				<div class="card card-body">
 					<table class="table table-sm", name="tabela", align="center">
 		<tr>
-		<th>Ime</th>
-		<th>Opis</th>
-		<th>Cena</th>
+		<th>Proizvodi</th>
 		<th>Lager</th>
 		
 		
@@ -124,8 +123,6 @@
 		{% for i in context %}
 		<tr>
 			<td>{{i.ime}}</td>
-			<td>{{i.opis}}</td>
-			<td>{{i.cena}}</td>
 			<td>{{i.lager}}</td>
 		
 			{% endfor %}
